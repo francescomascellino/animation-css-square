@@ -1,0 +1,48 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes move {
+
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 400px);
+    }
+
+    50% {
+        top: calc(100% - 400px);
+        left: calc(100% - 400px);
+
+    }
+
+    75% {
+        top: calc(100% - 400px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+
+}
